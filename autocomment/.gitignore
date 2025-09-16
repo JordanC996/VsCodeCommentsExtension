@@ -1,0 +1,8 @@
+out/
+# VS Code
+.vscode/
+# Node modules
+node_modules/
+# Log e mappe
+*.log
+*.js.map
