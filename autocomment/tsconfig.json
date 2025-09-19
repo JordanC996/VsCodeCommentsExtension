@@ -1,17 +1,17 @@
 {
-	"compilerOptions": {
-		"module": "Node16",
-		"target": "ES2022",
-		"outDir": "out",
-		"lib": [
-			"ES2022"
-		],
-		"sourceMap": true,
-		"rootDir": "src",
-		"strict": true,   /* enable all strict type-checking options */
-		/* Additional Checks */
-		// "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
-		// "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
-	}
+  "compilerOptions": {
+    "module": "Node16",              // corretto per VSCode extensions
+    "target": "ES2022",              // va bene
+    "outDir": "out",
+    "rootDir": "src",
+    "lib": [
+      "ES2022",
+      "dom"                          // <-- serve per avere i tipi di fetch, Request, Response, ecc.
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,         // utile se importi pacchetti commonjs
+    "skipLibCheck": true             // evita warning inutili
+  },
+  "include": ["src"]
 }

@@ -1,7 +1,7 @@
 {
   "name": "autocomment",
   "displayName": "AutoComment",
-  "description": "",
+  "description": "Estensione VS Code per processare testo con backend Python",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.104.0"
@@ -10,16 +10,25 @@
     "Other"
   ],
   "activationEvents": [
-  
-],
+    "onCommand:autocomment.processText"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "autocomment.helloWorld",
-        "title": "Hello World"
+        "command": "autocomment.processText",
+        "title": "Processa testo",
+        "category": "My Extension"
       }
-    ]
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "autocomment.processText",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

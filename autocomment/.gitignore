@@ -6,3 +6,5 @@ node_modules/
 # Log e mappe
 *.log
 *.js.map
+*.pyc
+venv
