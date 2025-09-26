@@ -18,7 +18,7 @@ class OllamaClient(LLMClient):
     def chat_completion(self, system_prompt, user_prompt, response_format):
         response = ollama.chat(
             messages=[
-                {"role": "system", "content": system_prompt},
+                #{"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
             model=self._model,
